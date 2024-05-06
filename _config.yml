@@ -1,12 +1,12 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-title: Scott Xu
+title: Karen Kuang
 description: >- # this means to ignore newlines until "baseurl:"
   Bay is a minimal Jekyll Theme.
-domain: zichuan-scott-xu.github.io 
+domain: karenSashimi.github.io
 baseurl: "" # the subpath of the site
-url: "https://zichuan-scott-xu.github.io" # the base hostname & protocol for the site
+url: "https://karenSashimi.github.io" # the base hostname & protocol for the site
 og_image: /assets/img/profile-pic.jpg
 google_analytics: "UA-121636368-3"
 
@@ -16,24 +16,19 @@ header:
       slug: /
     - name: Projects
     - name: Experiences
-    - name: Blog
-
+    # - name: Blog
 
 footer:
   show_powered_by: false
   contact:
     - name: Email
-      value: scottxu@stanford.edu
-      link: mailto:scottxu@stanford.edu
-    - name: WeChat
-      value: scottxu9375
-      link: "#"
+      value: karenkuang1111@gmail.com
+      link: mailto:karenkuang1111@gmail.com
   follow:
     - name: LinkedIn
-      link: http://linkedin.com/in/zichuanscottxu
-    - name: GitHub
-      link: http://github.com/zichuan-scott-xu
-
+      link: http://linkedin.com/in/karen-yx-kuang
+    # - name: GitHub
+    #   link: http://github.com/zichuan-scott-xu
 
 # Build settings
 markdown: kramdown
@@ -43,7 +38,7 @@ kramdown:
   auto_ids: true
   syntax_highlighter: rouge
 sass:
-    style: :compressed
+  style: :compressed
 plugins:
   - jekyll-feed
 
