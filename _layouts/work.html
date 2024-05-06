@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<link rel="preload" href="/assets/fonts/Noto-Sans-700/Noto-Sans-700.woff2" as="font" type="font/woff2" crossorigin ></link>
+<link rel="preload" href="/assets/fonts/Noto-Sans-regular/Noto-Sans-regular.woff2" as="font" type="font/woff2" crossorigin ></link>
+<html>
+  {% include head.html %}
+
+  <body>
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="work">
+          <div>
+            {{ page.intro }}
+          </div>
+          <br>
+          {{ content }}
+          <h1 class="page-heading">{{ page.title }}</h1>
+
+          {% for item in page.items %}
+          <div class="work-item">
+            <img
+              src="{{ item.image.src | absolute_url }}"
+              alt="{{ item.image.alt }}"
+              class="work-bubble"
+            />
+            <span class="work-text">
+              <strong>{{ item.title }}</strong>
+              &mdash;
+              {{ item.description }}
+            </span>
+          </div>
+          {% endfor %}
+
+        </div>
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+    {% include foot.html %}
+  </body>
+</html>

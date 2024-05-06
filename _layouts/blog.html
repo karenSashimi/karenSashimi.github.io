@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<link rel="preload" href="/assets/fonts/Noto-Sans-700/Noto-Sans-700.woff2" as="font" type="font/woff2" crossorigin ></link>
+<link rel="preload" href="/assets/fonts/Noto-Sans-regular/Noto-Sans-regular.woff2" as="font" type="font/woff2" crossorigin ></link>
+<html>
+  {% include head.html %}
+
+  <body>
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="blog">
+          <h1 class="page-heading">{{ page.title }}</h1>
+          {{ content }}
+
+          <p class="blog-post-list">
+            {% assign psize = site.posts | size %}
+            {% if psize == 0 %} 
+              <p>More coming out in 2023.</p>
+            {% endif %}
+            {% for post in site.posts %}
+              {% if post.draft != true %}
+                <span class="blog-post-date">{{ post.date | date: "%B %-d, %Y" }}</span>
+                <a href="{{ post.url | replace:".html","" | prepend: site.url }}" class="blog-post-title">
+                  {{ post.title }}
+                </a>
+                <br />
+
+              {% endif %}
+
+            {% endfor %}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+    {% include foot.html %}
+  </body>
+</html>
