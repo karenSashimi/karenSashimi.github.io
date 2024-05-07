@@ -1,7 +1,7 @@
 ---
 layout: work
 title: Work
-intro: Introduction TODO
+intro: I am most passionate about projects that allow my to apply my technical skills to improve efficiency, and drive innovation within various organizations.
 slug: /work
 items:
   - title: Creating Management Dashboard for Cornell IT
